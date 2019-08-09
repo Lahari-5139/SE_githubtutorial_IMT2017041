@@ -11,7 +11,8 @@ import java.util.Scanner;
          {
              System.out.print("1.Add two Numbers\n");
              System.out.print("2.Multiply two Numbers\n");
-             System.out.print("3.Exit\n\n");
+             System.out.print("3.Subtract two Numbers\n");
+             System.out.print("4.Exit\n\n");
              System.out.print("Enter your choice: ");
              choice = scan.next().charAt(0);
              switch(choice)
@@ -22,13 +23,19 @@ import java.util.Scanner;
                             res = a+b;
                             System.out.print("Result = " + res);
                             break;
-                case '2' : System.out.print("Enter two numbers: ");
+                 case '2' : System.out.print("Enter two numbers: ");
                             a = scan.nextFloat();
                             b = scan.nextFloat();
                             res = a*b;
                             System.out.print("Result = " + res);
                             break;
-                 case '3' : System.exit(0);
+                 case '3' : System.out.print("Enter two numbers: ");
+                            a = scan.nextFloat();
+                            b = scan.nextFloat();
+                            res = a-b;
+                            System.out.print("Result = " + res);
+                            break;
+                 case '4' : System.exit(0);
                             break;
                  default : System.out.print("INVALID CHOICE!");
              }
